@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\adeye\\source\\repos\\Bookstore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\models\\dtos\\requestdtos\\addbookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|solutionrelative:bookstore\\models\\dtos\\requestdtos\\addbookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\data\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|solutionrelative:bookstore\\data\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\models\\dtos\\requestdtos\\updatestockrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|solutionrelative:bookstore\\models\\dtos\\requestdtos\\updatestockrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\bookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|solutionrelative:bookstore\\bookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|solutionrelative:bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FEF657-9D33-469A-88A0-00CC9BF08454}|Bookstore\\Bookstore.csproj|c:\\users\\adeye\\source\\repos\\bookstore\\bookstore\\models\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Program.cs",
+              "RelativeDocumentMoniker": "Bookstore\\Program.cs",
+              "ToolTip": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Program.cs",
+              "RelativeToolTip": "Bookstore\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T06:08:07.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookstoreDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Data\\BookstoreDbContext.cs",
+              "RelativeDocumentMoniker": "Bookstore\\Data\\BookstoreDbContext.cs",
+              "ToolTip": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Data\\BookstoreDbContext.cs",
+              "RelativeToolTip": "Bookstore\\Data\\BookstoreDbContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T05:52:26.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bookstore",
+              "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Bookstore.csproj",
+              "RelativeDocumentMoniker": "Bookstore\\Bookstore.csproj",
+              "ToolTip": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Bookstore.csproj",
+              "RelativeToolTip": "Bookstore\\Bookstore.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-07T05:51:38.82Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -34,33 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddBookRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Models\\DTOs\\RequestDTOs\\AddBookRequest.cs",
-              "RelativeDocumentMoniker": "Bookstore\\Models\\DTOs\\RequestDTOs\\AddBookRequest.cs",
-              "ToolTip": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Models\\DTOs\\RequestDTOs\\AddBookRequest.cs",
-              "RelativeToolTip": "Bookstore\\Models\\DTOs\\RequestDTOs\\AddBookRequest.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA8AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T05:37:55.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateStockRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Models\\DTOs\\RequestDTOs\\UpdateStockRequest.cs",
-              "RelativeDocumentMoniker": "Bookstore\\Models\\DTOs\\RequestDTOs\\UpdateStockRequest.cs",
-              "ToolTip": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Models\\DTOs\\RequestDTOs\\UpdateStockRequest.cs",
-              "RelativeToolTip": "Bookstore\\Models\\DTOs\\RequestDTOs\\UpdateStockRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T05:37:22.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\adeye\\source\\repos\\Bookstore\\Bookstore\\Models\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Bookstore\\Models\\Entities\\Book.cs",

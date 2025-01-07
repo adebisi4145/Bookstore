@@ -1,4 +1,4 @@
-﻿namespace Bookstore.Models.DTOs.Response_DTOs
+﻿namespace Bookstore.Models.Contracts.DTOs
 {
     public class BookResponse
     {

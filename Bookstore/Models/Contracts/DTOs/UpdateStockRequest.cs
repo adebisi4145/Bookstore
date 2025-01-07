@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Bookstore.Models.DTOs.RequestDTOs
+namespace Bookstore.Models.Contracts.DTOs
 {
     public class UpdateStockRequest
     {
