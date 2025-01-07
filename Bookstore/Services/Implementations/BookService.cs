@@ -118,7 +118,7 @@ namespace Bookstore.Services.Implementations
         }
 
 
-        public async Task<BaseResponse<BookResponse>> UpdateStockAsync(int bookId, int newStockQuantity)
+        public async Task<BaseResponse<BookResponse>> UpdateStockQuantityAsync(int bookId, int newStockQuantity)
         {
             var response = new BaseResponse<BookResponse>();
 
