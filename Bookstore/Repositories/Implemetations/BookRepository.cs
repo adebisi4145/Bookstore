@@ -26,12 +26,28 @@ namespace Bookstore.Repositories.Implemetations
             return await _dbContext.Books.ToListAsync();
         }
 
-        public async Task<Book?> GetBookByIdAsync(int id)
+        public async Task<Book?> GetBookByIdAsync(Guid id)
         {
             return await _dbContext.Books.FirstOrDefaultAsync(c=> c.Id == id);
         }
+        public async Task<IEnumerable<Book>> GetBooksByAuthorAsync(string author)
+        {
+            return await _dbContext.Books
+                .Where(b => b.Author.ToLower().Contains(author.ToLower()))
+                .ToListAsync();
+        }
+        public async Task<Book?> GetBookByTitleAndAuthorAsync(string title, string author)
+        {
+            return await _dbContext.Books.FirstOrDefaultAsync(b => b.Title.ToLower() == title.ToLower() && b.Author.ToLower() == author.ToLower());
+        }
+        public async Task<IEnumerable<Book>> GetBooksByPriceRangeAsync(decimal minPrice, decimal maxPrice)
+        {
+            return await _dbContext.Books
+                .Where(b => b.Price >= minPrice && b.Price <= maxPrice)
+                .ToListAsync();
+        }
 
-        public async Task<Book> UpdateStockQuantityAsync(Book book)
+        public async Task<Book> UpdateStockAsync(Book book)
         {
              _dbContext.Books.Update(book);
             await _dbContext.SaveChangesAsync();

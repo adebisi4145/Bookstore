@@ -6,7 +6,9 @@ namespace Bookstore.Services.Interfaces
     {
         Task<BaseResponse<BookResponse>> AddBookAsync(AddBookRequest request);
         Task<BaseResponse<IEnumerable<BookResponse>>> GetAllBooksAsync();
-        Task<BaseResponse<BookResponse>> GetBookByIdAsync(int id);
-        Task<BaseResponse<BookResponse>> UpdateStockQuantityAsync(int bookId, int newStockQuantity);
+        Task<BaseResponse<BookResponse>> GetBookByIdAsync(Guid id);
+        Task<BaseResponse<IEnumerable<BookResponse>>> GetBooksByAuthorAsync(string author);
+        Task<BaseResponse<IEnumerable<BookResponse>>> GetBooksByPriceRangeAsync(GetPriceRangeRequest request);
+        Task<BaseResponse<BookResponse>> UpdateStockAsync(Guid bookId, UpdateStockRequest request);
     }
 }

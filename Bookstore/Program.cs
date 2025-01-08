@@ -1,4 +1,5 @@
 using Bookstore.Data;
+using Bookstore.Middlewares;
 using Bookstore.Repositories.Implemetations;
 using Bookstore.Repositories.Interfaces;
 using Bookstore.Services.Implementations;
@@ -12,6 +13,7 @@ builder.Services.AddDbContext<BookstoreDbContext>(options => options.UseNpgsql(b
 
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddLogging();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -19,6 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

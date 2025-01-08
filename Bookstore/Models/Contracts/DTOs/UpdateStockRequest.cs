@@ -4,6 +4,8 @@ namespace Bookstore.Models.Contracts.DTOs
 {
     public class UpdateStockRequest
     {
-        public int StockQuantity { get; set; }
+        [Required(ErrorMessage = "Stock is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "Stock cannot be negative")]
+        public int NewStock { get; set; }
     }
 }

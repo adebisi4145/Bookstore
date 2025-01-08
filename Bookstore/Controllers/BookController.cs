@@ -9,7 +9,6 @@ namespace Bookstore.Controllers
     public class BookController : Controller
     {
         private readonly IBookService _bookService;
-
         public BookController(IBookService bookService)
         {
             _bookService = bookService;
@@ -40,8 +39,8 @@ namespace Bookstore.Controllers
             return Ok(response.Data);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetBookByIdAsync(int id)
+        [HttpGet("get-by-id/{id}")]
+        public async Task<IActionResult> GetBookByIdAsync(Guid id)
         {
             var response = await _bookService.GetBookByIdAsync(id);
 
@@ -50,13 +49,36 @@ namespace Bookstore.Controllers
 
             return Ok(response.Data);
         }
-        [HttpPut("update-stock-quantity/{bookId}")]
-        public async Task<IActionResult> UpdateStockQuantityAsync(int bookId, [FromBody] int newStockQuantity)
+
+        [HttpGet("get-by-author{author}")]
+        public async Task<IActionResult> GetBookByAuthorAsync(string author)
+        {
+            var response = await _bookService.GetBooksByAuthorAsync(author);
+
+            if (!response.Status)
+                return NotFound(response.Message);
+
+            return Ok(response.Data);
+        }
+
+        [HttpGet("get-by-price-range")]
+        public async Task<IActionResult> GetBooksByPriceRangeAsync([FromQuery] GetPriceRangeRequest request)
+        {
+            var response = await _bookService.GetBooksByPriceRangeAsync(request);
+
+            if (!response.Status)
+                return NotFound(response.Message);
+
+            return Ok(response.Data);
+        }
+
+        [HttpPut("update-stock/{bookId}")]
+        public async Task<IActionResult> UpdateStockAsync(Guid bookId, [FromBody] UpdateStockRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var response = await _bookService.UpdateStockQuantityAsync(bookId, newStockQuantity);
+            var response = await _bookService.UpdateStockAsync(bookId, request);
 
             if (!response.Status)
                 return BadRequest(response.Message); 
